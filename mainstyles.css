@@ -6,3 +6,9 @@ html{
 img{
   text-align: center;
 }
+a{
+  color: rgb(171, 195, 234);
+}
+a: visited{
+  color: rgb(115, 147, 198);
+}
