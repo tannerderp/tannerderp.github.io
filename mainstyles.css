@@ -17,6 +17,9 @@ img{
 a{
   color: rgb(59, 109, 191);
 }
+p{
+  font-size: 15px;
+}
 #headerLinks{
   font-size: 25px;
 }
