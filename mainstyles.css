@@ -1,6 +1,6 @@
 html{
   text-align: center;
-  background-color: rgb(247, 250, 255);
+  background-color: rgb(161, 177, 204);
   font-family: 'PT Sans', sans-serif;
 }
 h1{
@@ -8,7 +8,6 @@ h1{
   padding: 5px;
 }
 header{
-  background-color: rgb(161, 177, 204);
   padding: 0px;
   margin: 0px;
 }
@@ -17,4 +16,10 @@ img{
 }
 a{
   color: rgb(59, 109, 191);
+}
+#headerLinks{
+  font-size: 25px;
+}
+#content{
+  background-color: rgb(237, 241, 247);
 }
