@@ -22,4 +22,6 @@ a{
 }
 #content{
   background-color: rgb(237, 241, 247);
+  border-radius: 5px;
+  text-align: left;
 }
