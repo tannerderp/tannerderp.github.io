@@ -6,6 +6,9 @@ html{
 h1{
   font-size: 50px;
 }
+header{
+  color: rgb(161, 177, 204);
+}
 img{
   text-align: center;
 }
