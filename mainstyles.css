@@ -18,7 +18,7 @@ a{
   color: rgb(59, 109, 191);
 }
 p{
-  font-size: 15px;
+  font-size: 20px;
 }
 #headerLinks{
   font-size: 25px;
@@ -27,5 +27,5 @@ p{
   background-color: rgb(237, 241, 247);
   border-radius: 5px;
   text-align: left;
-  margin: 15px auto;
+  padding: 30px;
 }
