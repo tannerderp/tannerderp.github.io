@@ -5,6 +5,7 @@ html{
 }
 h1{
   font-size: 50px;
+  padding: 5px;
 }
 header{
   background-color: rgb(161, 177, 204);
