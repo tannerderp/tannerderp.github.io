@@ -10,8 +10,9 @@ nav {
 }
 #logoWords{
   font-family: 'Permanent Marker', cursive;
-  font-size: 60px;
+  font-size: 58px;
   float: left;
+  margin: auto 0;
   vertical-align: middle;
   text-align: left;
 }
