@@ -1,0 +1,12 @@
+#projects{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+html{
+  font-family: 'Rubik', sans-serif;
+}
