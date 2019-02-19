@@ -1,0 +1,40 @@
+nav {
+  background-color: rgb(17, 76, 170);
+  min-height: 70px;
+}
+#logo{
+  float: left;
+  width: 60px;
+  height: 70px;
+}
+#logoWords{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 58px;
+  float: left;
+  margin: auto 0;
+  vertical-align: middle;
+  text-align: left;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: rgb(29, 60, 109);
+}
