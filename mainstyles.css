@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 html{
   text-align: center;
   background-color: rgb(161, 177, 204);
@@ -28,8 +32,4 @@ p{
   border-radius: 5px;
   text-align: left;
   padding: 20px;
-}
-*{
-  margin: 0;
-  padding: 0;
 }
