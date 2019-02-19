@@ -5,6 +5,8 @@ nav {
 }
 #logo{
   float: left;
+  width: 60px;
+  height: 60px;
 }
 #logoWords{
   font-family: 'Permanent Marker', cursive;
