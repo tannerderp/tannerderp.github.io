@@ -38,3 +38,6 @@ p{
   width: 60%;
   max-width: 900px;
 }
+ul{
+  padding: 5px 0 5px 30px;
+}
