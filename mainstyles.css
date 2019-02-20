@@ -31,6 +31,7 @@ p{
 }
 #content{
   background-color: rgb(237, 241, 247);
+  line-height: 7px;
   border-radius: 5px;
   text-align: left;
   padding: 20px;
