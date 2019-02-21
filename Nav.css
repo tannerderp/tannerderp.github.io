@@ -3,8 +3,8 @@
   padding: 0;
 }
 nav {
-  background-color: rgb(17, 76, 170);
-  min-height: 70px;
+  background-color: rgb(100, 183, 224);
+  min-height: 80px;
 }
 #logo{
   float: left;
@@ -24,7 +24,7 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(17, 76, 170);
+  background-color: rgb(100, 183, 224);
 }
 
 .nav li {
@@ -40,5 +40,5 @@ nav {
 }
 
 .nav li a:hover {
-  background-color: rgb(29, 60, 109);
+  background-color: rgb(100, 183, 224);
 }

@@ -7,6 +7,15 @@ html{
   background-color: rgb(161, 177, 204);
   font-family: 'PT Sans', sans-serif;
 }
+.nav{
+  margin: 0;
+  padding: 0;
+}
+html{
+  text-align: center;
+  background-color: rgb(161, 177, 204);
+  font-family: 'PT Sans', sans-serif;
+}
 h1{
   font-size: 50px;
   padding: 5px;
@@ -31,8 +40,14 @@ p{
 }
 #content{
   background-color: rgb(237, 241, 247);
+  line-height: 2;
   border-radius: 5px;
   text-align: left;
   padding: 20px;
   margin: 10px auto;
+  width: 60%;
+  max-width: 900px;
+}
+ul{
+  padding: 5px 0 5px 30px;
 }
