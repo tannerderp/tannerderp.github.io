@@ -11,11 +11,6 @@ html{
   margin: 0;
   padding: 0;
 }
-html{
-  text-align: center;
-  background-color: rgb(161, 177, 204);
-  font-family: 'PT Sans', sans-serif;
-}
 h1{
   font-size: 50px;
   padding: 5px;
