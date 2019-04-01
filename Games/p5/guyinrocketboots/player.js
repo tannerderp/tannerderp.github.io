@@ -50,6 +50,7 @@ var player = {
 		this.y += this.yvel;
 		this.yvel += 1;
 		this.xvel *= 0.95;
+		this.x = constrain(this.x, -10, width+10);
 		if(this.fuel>0){
 			cameraY = this.y;
 		}
