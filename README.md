@@ -1,2 +1,9 @@
 # Tannerderp.tk
-website that i'm developing right now. Don't really now the complete purpose of it yet, but I am working on a mario game with sprites using p5 that I will release on the site.
+My website
+
+## purpose
+
+* have all my p5 and future games
+* that's pretty much it right now
+
+Right now I'm using a free domain (.tk), but I will get a .com later
