@@ -20,7 +20,7 @@ function game(){
 	player.displayFuel();
 	fill(0,0,0);
 	textSize(50);
-	text(altitude, 75, 100);
+	text(max(altitude, 0), 75, 100);
 };
 function home(){
 	background(200,225,255);
