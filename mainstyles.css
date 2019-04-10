@@ -49,6 +49,9 @@ p{
   width: 60%;
   max-width: 900px;
 }
+body{
+    min-height: calc(100vh - 70px);
+}
 ul{
   padding: 5px 0 5px 30px;
 }
