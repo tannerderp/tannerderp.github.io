@@ -2,39 +2,65 @@
 
 <html>
 <head>
-  <link rel = "stylesheet" href = "/Nav.css">
-  <link rel = "stylesheet" href = "/mainstyles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/master.css">
   <link rel="shortcut icon" href="/Images/derp face.png">
   <title>Tannerderp | Home</title>
 </head>
 <body>
-  <div>
-    <nav>
-      <div class = "nav">
-        <img src = "Images/derp face.png" id = "logo">
-        <p id = "logoWords">Tannerderp</p><br>
-        <ul>
-          <li><a href = "/">Home</a>
-          <li><a href = "/Games">Games</a>
-          <li><a href = "/About">About</a>
-        </ul>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-blue">
+  <img src = "https://tannerderp.tk/Images/derp%20face.png" height = "50" class = "logo"><p class = "logo">Tannerderp</p>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Games
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/Games/p5">P5</a>
+          <a class="dropdown-item" href="/Games/scratchandkhan">Scratch and Khan</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/Games/sports">Sports</a>
+          <a class = "dropdown-item" href = "/Games/platformers">Platformers</a>
+        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+    </ul>
+    <ul class = "nav navbar-nav ml-auto">
+      <div class = "social-icons nav-link" style = "text-align:right">
+      <li>
+        <a href = "www.github.com/tannerderp"><i class="fab fa-github"></i></a>
+        <a href = "https://www.youtube.com/channel/UCLQ159u8b9gjVGgT0qMziQA"><i class="fab fa-youtube"></i></a>
+      </li>
       </div>
-    </nav>
-    <br>
+    </ul>
+  </div>
+</nav>
     <header>
       <h1>Welcome to Tannerderp</h1>
     </header>
-    <div id  = "content">
-    <h2>Newest Game</h2>
-    <a href = "/games/p5/guyinrocketboots">Guy in Rocket Boots</a>
-    <h2>Profiles on other platforms</h3>
-    <ul>
-      <li><a href = "https://scratch.mit.edu/users/tannerderp/" target = "_blank">Scratch</a>
-      <li><a href = "https://www.khanacademy.org/profile/tannerderp" target  = "_blank">Khan</a>
-      <li><a href = "https://github.com/tannerderp" target = "_blank">Github</a>
-      <li><a href = "https://www.openprocessing.org/user/163596/" target = "_blank">Open Processing</a>
-    </ul>
+    <br>
+    <div class  = "container bg-white p-4 rounded">
+        <h2>Newest Game</h2>
+        <a href = "/games/p5/guyinrocketboots">Guy in Rocket Boots</a>
+        <h2>What I'm Doing Off the Site</h2>
+        <ul>
+          <li><a href = "https://scratch.mit.edu/users/tannerderp/" target = "_blank">Scratch</a>
+          <li><a href = "https://www.khanacademy.org/profile/tannerderp" target  = "_blank">Khan</a>
+          <li><a href = "https://github.com/tannerderp" target = "_blank">Github</a>
+          <li><a href = "https://www.openprocessing.org/user/163596/" target = "_blank">Open Processing</a>
+        </ul>
   </div>
-</div>
 </body>
 </html>
