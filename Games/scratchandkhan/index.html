@@ -3,38 +3,69 @@
     <head>
         <meta charset="utf-8">
         <title>Tannerderp | Scratch and Khan Academy Games</title>
-        <link rel = "stylesheet" href = "/Nav.css">
-        <link rel = "stylesheet" href = "/mainstyles.css">
-        <link rel = "stylesheet" href = "styles.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel = "stylesheet" href = "localstyles.css">
         <link rel="shortcut icon" href="/Images/derp face.png">
     </head>
     <body>
-        <nav>
-          <div class = "nav">
-            <img src = "/Images/derp face.png" id = "logo">
-            <p id = "logoWords">Tannerderp</p><br>
-            <ul>
-              <li><a href = "/">Home</a>
-              <li><a href = "/Games">Games</a>
-              <li><a href = "/About">About</a>
-            </ul>
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-blue">
+      <img src = "https://tannerderp.tk/Images/derp%20face.png" height = "50" class = "logo"><p class = "logo">Tannerderp</p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Games
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Games/p5">P5</a>
+              <a class="dropdown-item active" href="/Games/scratchandkhan">Scratch and Khan</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Games/sports">Sports</a>
+              <a class = "dropdown-item" href = "/Games/platformers">Platformers</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+        <ul class = "nav navbar-nav ml-auto">
+          <div class = "social-icons nav-link" style = "text-align:right">
+          <li>
+            <a href = "www.github.com/tannerderp"><i class="fab fa-github"></i></a>
+            <a href = "https://www.youtube.com/channel/UCLQ159u8b9gjVGgT0qMziQA"><i class="fab fa-youtube"></i></a>
+          </li>
           </div>
-        </nav>
-        <br>
-        <div id = "content">
-          <div id = "projects">
-            <h1>Khan Academy</h1>
-            <p>You can find all of my projects <a href = "https://www.khanacademy.org/profile/tannerderp/projects" target = "_blank">here</a>. These are just some of the good ones.</p>
-            <br><h2><a href="https://www.khanacademy.org/computer-programming/basketball/5289777235394560">Basketball</a></h2><script src="https://www.khanacademy.org/computer-programming/basketball/5289777235394560/embed.js?editor=no&buttons=no&author=no&embed=yes"></script>
-            <br><h2><a href="https://www.khanacademy.org/computer-programming/the-ultimate-platformer-with-a-level-editor/5117517209436160">The Ultimate Platformer (With a level editor!)</a></h2><script src="https://www.khanacademy.org/computer-programming/the-ultimate-platformer-with-a-level-editor/5117517209436160/embed.js?editor=no&buttons=no&author=no&embed=yes"></script>
-            <br><h2><a href="https://www.khanacademy.org/computer-programming/guy-on-a-ladder/6113913256706048">Guy on a Ladder</a></h2><script src="https://www.khanacademy.org/computer-programming/guy-on-a-ladder/6113913256706048/embed.js?editor=no&buttons=no&author=no&embed=yes"></script>
-            <h1>Scratch</h1>
-            <p>You can find all my projects <a href = "https://scratch.mit.edu/users/tannerderp/projects/" target = "_blank">here</a>. These are just some of the good ones.</p>
-            <p>Scratch removed the ability to embed projects :( So these are just links.</p>
-            <a target = "_blank"href = "https://scratch.mit.edu/projects/239890141/"><img width = "300" src = "https://cdn2.scratch.mit.edu/get_image/project/239890141_144x108.png"><br>Flex Tape Adventure</a>
-            <br><a target = "_blank" href = "https://scratch.mit.edu/projects/287269795/"><img src = "https://cdn2.scratch.mit.edu/get_image/project/287269795_144x108.png" width = "300"><br>Bob Ross Adventure</a>
-            <br><a target = "_blank" href = "https://scratch.mit.edu/projects/217111895/"><img width = "300" src = "https://cdn2.scratch.mit.edu/get_image/project/217111895_144x108.png"><br>Wrecking Ball Dodger</a>
-          </div>
+        </ul>
+      </div>
+    </nav>
+    <header class = "container-fluid img-header">
+        <img class = "img-fluid" src = "/Images/scratchandkhanheader.png" width = "300px">
+    </header>
+    <div class = "container bg-white p-4 rounded">
+        <p>These projects are highlights from my time using these sites. You can find all my projects on  my scratch on khan profiles linked below</p>
+        <a href = "https://www.khanacademy.org/profile/tannerderp/projects" target = "_blank">Khan Profile</a>
+        <br><a href = "https://scratch.mit.edu/users/tannerderp/projects/" target = "_blank">Scratch Profile</a>
+            <div class = "projects">
+                <h1>Khan Academy</h1>
+                <br><h2><a href="https://www.khanacademy.org/computer-programming/basketball/5289777235394560">Basketball</a></h2><script src="https://www.khanacademy.org/computer-programming/basketball/5289777235394560/embed.js?editor=no&buttons=no&author=no&embed=yes"></script>
+                <br><h2><a href="https://www.khanacademy.org/computer-programming/the-ultimate-platformer-with-a-level-editor/5117517209436160">The Ultimate Platformer (With a level editor!)</a></h2><script src="https://www.khanacademy.org/computer-programming/the-ultimate-platformer-with-a-level-editor/5117517209436160/embed.js?editor=no&buttons=no&author=no&embed=yes"></script>
+                <br><h2><a href="https://www.khanacademy.org/computer-programming/guy-on-a-ladder/6113913256706048">Guy on a Ladder</a></h2><script src="https://www.khanacademy.org/computer-programming/guy-on-a-ladder/6113913256706048/embed.js?editor=no&buttons=no&author=no&embed=yes"></script>
+                <h1>Scratch</h1>
+                <p>Scratch removed the ability to embed projects :( So these are just links.</p>
+                <a target = "_blank"href = "https://scratch.mit.edu/projects/239890141/"><img width = "300" src = "https://cdn2.scratch.mit.edu/get_image/project/239890141_144x108.png"><br>Flex Tape Adventure</a>
+                <br><a target = "_blank" href = "https://scratch.mit.edu/projects/287269795/"><img src = "https://cdn2.scratch.mit.edu/get_image/project/287269795_144x108.png" width = "300"><br>Bob Ross Adventure</a>
+                <br><a target = "_blank" href = "https://scratch.mit.edu/projects/217111895/"><img width = "300" src = "https://cdn2.scratch.mit.edu/get_image/project/217111895_144x108.png"><br>Wrecking Ball Dodger</a>
+            </div>
         </div>
     </body>
 </html>
