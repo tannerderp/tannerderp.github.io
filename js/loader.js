@@ -14,7 +14,13 @@ function loadScript(url, callback) {
     body.appendChild(script);
 };
 function doneLoading(){
-    $("#navbar").load("/htmltemplates/nav.html");
+    $("#navbar").load("/htmltemplates/nav.html", function(){
+        if(active){
+            var $active = $('#' + active);
+            $active.addClass("active");
+            $active.children().append(' <span class="sr-only">(current)</span>');
+        }
+    });
 };
 loadScript("https://code.jquery.com/jquery-3.4.0.min.js", loadPopper);
 function loadPopper(){
