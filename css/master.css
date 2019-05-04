@@ -34,6 +34,12 @@ header{
 .game-image{
     height: 300px;
 }
+.flex-tape{
+    height: 200px;
+}
+.home{
+    margin-top: 50px;
+}
 /*nav bar stuff*/
 nav{
     margin: 0 0 0 0;
