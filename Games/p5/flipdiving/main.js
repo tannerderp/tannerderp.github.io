@@ -7,8 +7,8 @@ function setup() {
 	textFont("cursive");
 	angleMode(DEGREES);
 	let canvas = createCanvas(400, 500);
-	canvas.parent("game");
-	canvas.position(windowWidth/2+200, windowHeight/2+250);
+    canvas.position(windowWidth/2-200, windowHeight/2-250);
+	canvas.parent('game');
 }
 //setup{
 var currentScene = 1;
