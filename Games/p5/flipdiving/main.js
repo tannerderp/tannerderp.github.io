@@ -1,3 +1,4 @@
+//beware of inefficient code, this is an old project of mine updated, 
 function setup() {
     createCanvas(400, 500);
 	noStroke();
@@ -24,6 +25,11 @@ var failed = false;
 //}
 //mouse stuff {
 var clicked = false;
+var releaseClick = false;
+mouseReleased = function(){
+	releaseClick = true;
+	clicked = false;
+}
 mousePressed = function() {
     clicked = true;
 };
@@ -96,7 +102,7 @@ Player.prototype.phases = function(phase) {
         this.yvel+=0.2;
         this.x+=this.xvel;
         this.y+=this.yvel;
-        if(tuckingkey[32]){
+        if(tuckingkey[32]||clicked){
             this.tucking = true;
             this.evertucked = true;
             score += 1;
@@ -175,9 +181,9 @@ var scene2 = function() {
     }
     player.phases(divingPhase);
     //diving phases
-    if(keys[32] && divingPhase === 1){
+    if((keys[32]||releaseClick) && divingPhase === 1){
         divingPhase = 2;
-    }else if(keys[32] && divingPhase === 2){
+    }else if((keys[32]||releaseClick) && divingPhase === 2){
         divingPhase = 3;
     }
     player.rotation = player.rotation%360;
@@ -282,6 +288,7 @@ function how(){
 }
 //}
 function draw() {
+ releaseClick = false;
  cursor("default");
     if(currentScene === 1){
         scene1();
@@ -303,7 +310,6 @@ function draw() {
     fill(0, 0, 0);
     text("highscore: "+highscore, 305, 54);
     }
-    clicked = false;
     keys = {};
     if(score>highscore){
         console.log(true)
