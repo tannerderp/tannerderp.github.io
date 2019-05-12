@@ -6,7 +6,9 @@ function setup() {
     textAlign(CENTER);
 	textFont("cursive");
 	angleMode(DEGREES);
-	createCanvas(400, 500);
+	let canvas = createCanvas(400, 500);
+	canvas.parent("game");
+	canvas.position(windowWidth/2+200, windowHeight/2+250);
 }
 //setup{
 var currentScene = 1;
