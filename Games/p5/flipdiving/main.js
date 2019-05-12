@@ -6,9 +6,7 @@ function setup() {
     textAlign(CENTER);
 	textFont("cursive");
 	angleMode(DEGREES);
-    let canvas = createCanvas(400, 500);
-    canvas.position(windowWidth/2-200, windowHeight/2-250);
-	canvas.parent('game');
+	createCanvas(400, 500);
 }
 //setup{
 var currentScene = 1;
@@ -282,13 +280,12 @@ function how(){
     textSize(40);
     text("How to Play", width/2, 92);
     textSize(15);
-    text("At the beginning of your dive, press space to start rotating back and forth. Press space again to launch off the board from the angle you were at. Press space while in the air to tuck. Tucking spins you faster so you can avoid potential bellyflops or backflops. You need to tuck at least once in your dive, but you can't hit the water while tucking. Your score goes up as you tuck, so trying to go for the highscore means taking risks.", width/2, height/1.25, width, height);
+    text("At the beginning of your dive, click or press space to start rotating back and forth. Click or press space again to launch off the board from the angle you were at. Hold space or hold click while in the air to tuck. Tucking spins you faster so you can avoid potential bellyflops or backflops. You need to tuck at least once in your dive, but you can't hit the water while tucking. Your score goes up as you tuck, so trying to go for the highscore means taking risks.", width/2, height/1.25, width, height);
     backButton.draw();
     backButton.react();
 }
 //}
 function draw() {
- releaseClick = false;
  cursor("default");
     if(currentScene === 1){
         scene1();
@@ -311,6 +308,7 @@ function draw() {
     text("highscore: "+highscore, 305, 54);
     }
     keys = {};
+	releaseClick = false;
     if(score>highscore){
         console.log(true)
         highscore = score;
