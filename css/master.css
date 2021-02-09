@@ -37,6 +37,12 @@ header{
 .flex-tape{
     height: 200px;
 }
+.ultimate-header{
+    margin: 0 0 10px 0;
+    padding: 0;
+    max-height: 1000;
+    background-color: black;
+}
 .home{
     margin-top: 50px;
 }
